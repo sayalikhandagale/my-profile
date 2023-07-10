@@ -1,23 +1,25 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Learning</title>
     <style>
-        li{
+        /* li{
             color: orange;
-        }
-        h4{
-            color: chocolate;
-        }
-        #Sayli{
+        } */
+        #address{
             color: cadetblue;
         }
-        span{
+        #summary{
             color: chocolate;
         }
-        #summary2, #summary3, h3{
+        span{
+            color: red;
+            background-color: bisque;
+        }
+        /* This is the combinator selector, which is not recommended */
+        #summary2, #summary3{
             color: cadetblue;
             font-weight: bolder;
             font-size: larger;
@@ -25,16 +27,27 @@
             font-style: italic;
         }
         .fruit{
-            color: cadetblue;  
+            /* color: rgb(30, 100, 100);   */
+            color: #036753;
         }
         .para{
-            color: chocolate;
+            color: #000000;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            /* text-decoration: underline; */
+            /* text-shadow: 4px 4px 2px rgba(0,0,0,0.6); */
         }
-        span{
-            color: red;
+        .listFruits{
+            border: 2px solid red;
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
         }
-        .list{
-            margin-bottom: 10px;
+        .dolor{
+            color: brown;
+            text-decoration: underline;
         }
         .education{
             border: 5px solid rgb(83, 62, 62);
@@ -57,28 +70,46 @@
             border: 2px solid orange;
             padding: 30px;
         }
+        .dummy li{
+            list-style-type: circle;
+        }
+        .fruits li{
+            list-style-type: upper-roman; /*  lower-alpha | upper-alpha */
+        }
 
     </style>
 </head>
 <body>
-    <h2 style="color: brown; text-transform: uppercase; text-decoration: underline; font-style: italic;"> My Personal Details </h2>
-    <p style="color: orange; font-weight: bolder; font-size: larger;"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-   
-    <h3 id="Sayli"> Professional Summary </h3>
-    <ul>
-        <li> Lorem ipsum dolor sit.</li>
-        <li> Lorem ipsum dolor sit amet.</li>
-        <li> Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-        <li> Lorem, ipsum dolor.</li>
+    <h2 style="color: brown; text-transform: uppercase; text-decoration: underline; font-style: italic;"> my personal details </h2>
+    <p style="color: orange; font-weight: bolder; font-size: larger;"> Lorem ipsum dolor sit amet consectetur. </p>
+    
+    <h3 id="summary"> Professional Summary </h3>
+    <ul class="dummy">
+        <li>Lorem ipsum dolor sit.</li>
+        <li id="summary2">Lorem ipsum dolor sit amet.</li>
+        <li id="summary3">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Lorem, ipsum dolor.</li>
     </ul>
-    <h3> My <span> Permanent </span> address </h3>
-    <h3> List Of Fruits </h3>
-    <ul class="list">
-       <li> Apple </li>
-       <li class="fruit"> Mango </li>
-       <li class="fruit"> Water Melon </li>
-       <li> Grapes </li>
-    </ul>
-    <p class="para"> <span> Lorem ipsum dolor </span> sit amet consectetur adipisicing elit. Rem assumenda aut eveniet magnam soluta nobis laudantium repellat, voluptatibus sapiente sequi labore veniam quis pariatur molestiae consequatur modi suscipit. Vel, corrupti.</p>
+    <h3> My <span> Permanent </span> address</h3>
+    <h3 class="listFruits"> List Of Fruits </h3>
+    <ol class="fruits">
+        <li> Apple </li>
+        <li class="fruit"> Mango </li>
+        <li class="fruit"> Water Melon </li>
+        <li> Grapes </li>
+    </ol>
+
+    <p class="para">
+        Lorem <span class="dolor">ipsum dolor sit</span> amet consectetur adipisicing elit. Perferendis rem impedit modi. Voluptatum est veritatis corporis quaerat non numquam eum qui. Odio totam neque magnam eligendi deleniti debitis consequatur magni!
+    </p>
+
+    <p class="education">
+        My Education Detail
+    </p>
+
+    <h3 class="office">
+        My Office Address
+    </h3>
+
 </body>
 </html>
