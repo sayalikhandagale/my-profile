@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body{
+         background-color: wheat;
+    }
+    h2{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+    button{
+        border-radius: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    td{
+        padding-right: 20px;
+    }
+    label,button{
+        font-family: 'Poppins', sans-serif;
+          
+    }
+    input[type="text"],input[type="email"],input[type="password"],input[type="date"],input[type="time"]{
+            width: 200px;
+            border-radius: 4px;
+            padding: 4px;
+            color: wheat;
+            font-weight:100;
+            font-size: medium;
+            text-transform: lowercase;
+            font-family: 'Poppins', sans-serif; 
+        }
+        #add{
+            border-radius: 6px;
+            font-size: large;
+        }
+
+  </style>
+  <body>
+    <fieldset>
+      <legend><h2>Student Registration Form</h2></legend>
+      <form>
+      <table>
+        <tbody>
+            <tr>
+              <td><label><strong> First Name </strong></label></td>
+              <td><input type="text" required placeholder="only first name" autofocus maxlength="2" /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Last Name </strong></label></td>
+              <td><input type="text"  /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Email Address </strong> </label></td>
+              <td><input type="email" required placeholder="abc@gmail.com"/></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Password </strong></label></td>
+              <td><input type="password" /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Graduation </strong> </label></td>
+              <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Date of birth </strong></label></td>
+              <td><input type="date" /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Pass out Year </strong></label></td>
+              <td><input type="date" /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Select Gender </strong></label></td>
+              <td>
+                <input type="radio" name="gender" /><label> male </label>
+                <input type="radio" name="gender" /><label> female </label>
+                <input type="radio" name="gender" /><label> other </label>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><label> <strong> Technology Stack </strong></label></td>
+              <td>
+                <input type="checkbox" /><label> C </label>
+                <input type="checkbox" /><label> C++ </label>
+                <input type="checkbox" /><label> Java </label>
+                <input type="checkbox" /><label> Python </label>
+                <input type="checkbox" /><label> Angular </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Time </strong></label></td>
+              <td><input type="time" /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Select Photo </strong></label></td>
+              <td><input type="file" /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Select File </strong></label></td>
+              <td><input type="file" multiple /></td>
+            </tr>
+
+            <tr>
+              <td><label><strong> Select your Country </strong></label></td>
+              <td>
+                <select>
+                  <option value="India"> India </option>
+                  <option value="Africa"> Africa </option>
+                  <option value="Asia"> Asia </option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+                <td><label><strong> Permanent Address </strong></label></td>
+                <td><textarea id="add"></textarea></td>
+              </tr>
+
+            <tr>
+              <td><button type="submit">Register</button></td>
+              <td><button type="reset">Reset</button></td>
+            </tr>
+
+        </tbody>
+      </table>
+    </form>
+    </fieldset>
+  </body>
+</html>
