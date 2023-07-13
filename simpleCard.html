@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Signika+Negative&display=swap" rel="stylesheet">
+    <style>
+        .photo{
+          display: inline-block;
+        }
+        .Content{
+            display: inline-block;
+           
+        }
+        #text:hover{
+            color: rgb(240, 11, 11);
+        }
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: xx-large;
+            font-weight: bolder;
+            padding-left: 50px;
+        }
+        li{
+            font-family:'Signika Negative', sans-serif;
+            font-size: large;
+            font-weight: bolder;
+            list-style: none;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .points li::before{
+        content: "✍️";
+        }
+        .points li::selection{
+            color: rgb(124, 202, 205);
+        }
+        .points li:nth-last-child(even){
+          color: rgb(171, 232, 50);   background-color: rgb(74, 74, 74) ;
+        }
+        .icons li{
+        display: inline-block;
+        font-size: larger;
+        font-weight: bolder;
+       }
+       .login{
+        color: rgb(95, 3, 95);
+        margin: 7px;
+       }
+      
+       #power{
+        margin-left: 120px; margin-bottom: 1px; margin-top: 1px;
+        font-family: 'Signika Negative', sans-serif;
+        
+       }
+       #snow,#software{display:inline-block ;}
+       #software{
+        margin-left: 5px; margin-bottom: 1px;
+        font-size: x-large;
+        font-weight: bolder;        
+       }
+     #snow{
+        margin-left: 50px;
+     }
+     .icons{
+        text-align: center;
+     }
+    </style>
+</head>
+<body>
+    <fieldset style="box-shadow: 5px 5px 10px; border-radius: 20px; width: 800px;">
+    <div class="photo">
+        <img src="assets/profile12.jpg" width="270px" height="270px">
+    </div>
+
+    <div class="Content">
+        <h2 id="text"> Compare Text Online </h2>
+    <ul class="points">
+        <li> Compare Text Online free </li>
+        <li> Supports large file comparison </li>
+        <li> Ignore order and namespaces </li>
+        <li> Side by side diff view </li>
+        <li> Get results in tabular format for quick reference </li>
+        <li> TEXT diff tool </li>
+        <li> REST API </li>
+    </ul>
+    </div>
+
+   <div>
+    <p id="power">Powered By</p>
+    <i id="snow" class="fa fa-2x fa-cog" aria-hidden="true"></i>
+    <p id="software"> JSoftwareLabs </p>     
+   </div>
+
+<ul class="icons">
+    <li><span>Follow Me : </span></li>
+    <li><a class="login" href="https://www.linkedin.com/login"><i class="fa fa-2px fa-linkedin-square" aria-hidden="true"></i></a></li>
+
+    <li><a class="login" href="https://github.com/"><i class="fa fa-github-square" aria-hidden="true" ></i></a></li>
+
+    <li><a class="login" href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+
+    <li><a class="login" href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+  </ul>
+</fieldset>  
+</body>
+</html>
