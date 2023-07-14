@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            padding-left: 150px; padding-bottom: 2px;
+            border-radius: 7px; 
+            margin-bottom: 20px;
+        }
+        .reason{
+            padding-top: 1px; padding-left: 170px; padding-bottom: 20px; padding-right: 1px;
+            border-radius: 7px;
+        }
+        label{
+            font-size: larger; font-weight: bolder;
+        }
+        button{
+            margin-left: 250px; }
+        
+        div{
+            padding-top: 1px;  padding-left: 25px; padding-bottom: 1px; padding-right: 1px;
+            border-radius: 10px; 
+            color: rgb(241, 238, 238); background-color: rgb(61, 61, 182);
+        }
+        sup{
+            color: red;
+        }
+        input[type="text"]{
+            padding-left: 10px; padding-right: 150px; padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="box-shadow: 5px 5px 5px; border-radius: 20px; width: 250px; height: 480px;">
+    <h2> Subscriber </h2>
+    <hr>
+    <div>
+        <p> We're sorry to see you go, but hey, no hard <br> feelings, hopefully we will see you back <br> one day.<br> Please fill in your email address in order to <br> unsubscribe from the list.           
+        <br> You will receive an email to confrim your <br> unsubscription, just to make sure this is <br> not an accident or somebody else tries to <br> unsubscribe you.</p>
+           
+    </div>
+<form>
+    <table>
+        <tbody>
+        <tr>
+            <td><label> Email <sup> * </sup></label></td>
+        </tr>
+
+        <tr>
+            <td><input class="text" type="text"></td>
+        </tr>
+
+        <tr>
+            <td><label> Unsubscribe reason </label></td>
+        </tr>
+
+        <tr>
+            <td><input class="reason" type="text" required placeholder="Unsubscribe reason"></td>
+        </tr> 
+        
+    </tbody>
+    </table>
+        
+    <hr>  
+           <button type="button"> Unsubscribe </button> 
+</form>
+</fieldset>
+</body>
+</html>
