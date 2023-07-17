@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .container{  display: inline-block;  border-radius: 7px; border: 2px  solid rgb(211, 204, 204); 
+            width: 15%;  margin-left: 50px; position:relative;  top: 40px; box-shadow: 5px 5px 5px 2px;
+        }
+        .standard{  display: inline-block;  border-radius: 5px; border: 2px solid rgb(211, 204, 204); 
+            width: 15%;   margin-left: 50px; position:relative;  top: 40px; box-shadow: 5px 5px 5px 2px;
+        }
+        .contact{  display: inline-block;  border-radius: 5px; border: 2px solid rgb(211, 204, 204); 
+            width: 15%; margin-left: 50px; position: static; box-shadow: 5px 5px 5px 2px;
+        }
+        .para{ display: inline-block;
+             color: rgb(249, 246, 246); background-color: rgb(6, 124, 6);  font-size: large; font-weight: bolder;
+            padding-top: 10px; padding-left: 95px; padding-right: 92px; padding-bottom: 10px; border-radius: 4px;   
+        } 
+        .para1{ display: inline-block;
+            color: rgb(249, 246, 246); background-color: rgb(182, 4, 7);font-size: large;  font-weight: bolder; 
+            padding-top: 10px; padding-left: 80px; padding-right: 77px; padding-bottom: 10px;  border-radius: 4px; 
+        } 
+        .para2{ display: inline-block; 
+            color: rgb(249, 246, 246);  background-color: rgb(6, 124, 6);   font-size: large; font-weight: bolder;
+            padding-top: 10px; padding-left: 80px; padding-right: 77px; padding-bottom: 10px; border-radius: 4px;             
+        } 
+        li{
+            list-style: none; padding-left: 10px; 
+        }
+        ul{
+            padding-top: 10px;
+        }
+        .five{
+            text-align: center; font-weight: bolder; font-size: larger;
+        }
+        button{  margin-top: 0px; margin-bottom: 20px; margin-left: 40px; margin-right: 10px;
+            color: rgb(249, 246, 246); background-color: rgb(6, 123, 6); padding-top: 5px; padding-left: 50px; 
+            padding-right: 40px; padding-bottom: 5px; border-radius: 7px; 
+        }  
+        li::before{
+            content: "✔️";
+        }  
+        .domain::before{
+            content: "❌";
+        }    
+        button::after{
+            content: "💰";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="para"> Basic </span>
+        <ul>
+            <li> Hosting </li>
+            <li class="domain"> Domain </li>
+            <li> 1 GB Space </li>
+            <li class="domain"> Free SSL </li>
+            <li> 1 Website Host </li>
+        </ul>
+        <p class="five"> $5 </p>
+        <button type="button"> Buy Now  </button> 
+    </div>
+
+    <div class="contact">
+        <span class="para1"> Standard </span>
+        <ul>
+            <li> Hosting </li>
+            <li> Domain </li>
+            <li> 10 GB Space </li>
+            <li class="domain"> Free SSL </li>
+            <li> 4 Website Host </li>
+        </ul>
+        <p class="five"> $10 </p>
+        <button type="button"> Buy Now  </button> 
+    </div>
+
+    <div class="standard">
+        <span class="para2"> Standard </span>
+        <ul>
+            <li> Hosting </li>
+            <li> Domain </li>
+            <li> 10 GB Space </li>
+            <li> Free SSL </li>
+            <li> 4 Website Host </li>
+        </ul>
+        <p class="five"> $20</p>
+        <button type="button"> Buy Now  </button> 
+    </div>
+</body>
+</html>
